@@ -1,0 +1,35 @@
+﻿@model List<Product>
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Product List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="Upsert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg>
+                Ceate New Product
+            </a>
+        </div>
+    </div>
+    <table id="tblData" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>List Price</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/Product.js"></script>
+
+}
